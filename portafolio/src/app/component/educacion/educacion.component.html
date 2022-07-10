@@ -1,0 +1,39 @@
+<!--Educación-->
+<div class="conteiner row justify-content-center" id="divEducacion">
+    <h4 class="text-center" id="titulo_educacion">Educación</h4>  
+   
+    <ul >
+      <li *ngFor="let educacion of portafolio" >
+      
+        <div class="card mb-3" style="max-width: 540px;" id="educacion">
+          <div class="text-content-end" id="edicion">
+            <a><img src="assets/imagenes/pencil.svg"></a>
+            <a><img src="assets/imagenes/eliminar.svg"></a>
+          </div>
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img [src]="educacion.imagen" class="img-fluid rounded-start" id="educacion1">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-white">{{educacion.titulo}}</h5>
+                <p class="card-text text-white">{{educacion.descripcion}}</p>
+                <p class="card-text text-white"><small>{{educacion.anio}}</small><br>
+                <a href="{{educacion.link}}" class="card-text text-white" target="_blank">link</a><br>
+                  <a href="#certificado"><small>Certificado</small></a></p>
+                  <div id="certificado" class="certificado">
+                    <div class="certificado1">
+                      <img class="certificado2" [src]="educacion.certificado"><br>
+                      <a href="#educacion">Atras</a>
+                    </div>  
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    </li>
+    </ul>
+
+</div>
+  <!--Fin de Educación-->

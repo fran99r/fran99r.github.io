@@ -1,0 +1,27 @@
+<!--Experiencia-->
+<div class="conteiner row justify-content-center" id="experiencia" *ngIf="portafolio">
+    <div>
+      <h4 class="text-center" id="titulo">Experiencia</h4>
+    </div>  
+    <div class="card mb-3" style="max-width: 540px;" id="experiencia_1">
+     <div class="row">
+      <div class="text-content-end" id="edicion">
+        <a><img src="assets/imagenes/pencil.svg"></a>
+        <a><img src="assets/imagenes/eliminar.svg"></a>
+      </div>
+     </div>
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img [src]="portafolio.Experiencia.imagen" class="img-fluid rounded-start" id="experiencia_2">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-white">{{portafolio.Experiencia.titulo}}</h5>
+            <p class="card-text text-white">{{portafolio.Experiencia.descripcion}}</p>
+            <p class="card-text text-white"><small>{{portafolio.Experiencia.anio}}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin de Experencia-->

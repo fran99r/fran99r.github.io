@@ -1,0 +1,39 @@
+<!--Acerca de mi-->
+<div class="container-fluid" id="perfil" *ngIf="portafolio">
+    <div class="conteiner w-50 pl-5" id="perfil_1">
+     <div class="row align-items-center text-center" id="perfil_2">
+        <div class="col-sm p-3" id="perfil_3">
+          <div class="text-content-end" id="edicion">
+            <a><img src="assets/imagenes/pencil.svg"></a>
+            <a><img src="assets/imagenes/eliminar.svg"></a>
+          </div>
+        <img [src]="portafolio.AcercaDeMi.imagen" id="perfil_4" class="mx-auto d-block">
+        <h2 class="text-white" id="nombre" >{{portafolio.AcercaDeMi.nombre}}</h2>
+        <h3 class="text-white" id="nombre_1" >{{portafolio.AcercaDeMi.titulo}}</h3>
+        </div>
+        <div class="infor secondary-text" id="infor"><p><img [src]="portafolio.AcercaDeMi.imagenFlechaI" id="flechaderecha"><small><button type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent1" 
+          aria-controls="navbarSupportedContent1" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+          id="botom"
+          class="text-light">Acerca de mi</button>
+          </small><img [src]="portafolio.AcercaDeMi.imagenFlechaD" id="flechaizquierda"></p></div>
+        <div class="row collapse navbar-collapse" id="navbarSupportedContent1">
+          <div class="text-content-end" id="edicion">
+            <a><img src="assets/imagenes/pencil.svg"></a>
+            <a><img src="assets/imagenes/eliminar.svg"></a>
+          </div>
+        <p>{{portafolio.AcercaDeMi?.ocupacion}}<br>
+           Fecha de Nacimiento: {{portafolio.AcercaDeMi?.fechaDeNacimiento}} <br>
+           Edad: {{portafolio.AcercaDeMi?.edad}}<br>
+           Dirección: {{portafolio.AcercaDeMi?.direccion}}<br>
+           Localidad: {{portafolio.AcercaDeMi?.localidad}}  <br>
+           Provincia: {{portafolio.AcercaDeMi?.provincia}}<br>
+           País: {{portafolio.AcercaDeMi?.pais}} <br>
+        </p>
+        </div>
+      </div> 
+    </div>
+  </div>  
+  <!--Fin de Acerca de mi-->
