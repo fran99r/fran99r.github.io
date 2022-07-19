@@ -140,8 +140,15 @@ ul{
 }
 #educacion{
     background-color: #804000;
+    margin-top: 0px;
+    margin-left: 65px;
 }
 
+#educacionLista{
+   columns: 2; 
+  -webkit-columns: 2; 
+  -moz-columns: 2; 
+}
 
 a:link{
     color:#ede8df
@@ -190,12 +197,12 @@ a:visited{
 }
 
 #educacion{
-    margin-left: 30%;
     border: 5px solid rgb(212, 109, 13);
 }
 
 #divEducacion{
     background-image: url(assets/imagenes/fondo8.png);
+    height: 1350px;
 }
 
 #separador1{

@@ -1,8 +1,8 @@
 <!--Educación-->
-<div class="conteiner row justify-content-center" id="divEducacion">
+<div class="row" id="divEducacion">
     <h4 class="text-center" id="titulo_educacion">Educación</h4>  
    
-    <ul >
+    <ul id="educacionLista">
       <li *ngFor="let educacion of portafolio" >
       
         <div class="card mb-3" style="max-width: 540px;" id="educacion">
@@ -23,7 +23,7 @@
                   <a href="#certificado"><small>Certificado</small></a></p>
                   <div id="certificado" class="certificado">
                     <div class="certificado1">
-                      <img class="certificado2" [src]="educacion.certificado"><br>
+                      <img class="certificado2" *ngIf="educacion.certificado" src={{educacion.certificado}}><br>
                       <a href="#educacion">Atras</a>
                     </div>  
                   </div>
